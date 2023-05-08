@@ -1,15 +1,7 @@
 package com.example.demo;
 
-import com.inspur.zdp.util.DeviceReadEntity;
-import com.inspur.zdp.util.EndpointEntity;
-import com.inspur.zdp.util.EndpointNameEntity;
-import com.inspur.zdp.util.EndpointReadEntity;
-import org.springframework.aot.hint.ExecutableMode;
 import org.springframework.aot.hint.RuntimeHints;
 import org.springframework.aot.hint.RuntimeHintsRegistrar;
-import org.springframework.util.ReflectionUtils;
-
-import java.lang.reflect.Method;
 
 /**
  * @author: yanghaoxian
@@ -30,10 +22,10 @@ public class MyRuntimeHints implements RuntimeHintsRegistrar{
 
             // Register serialization
             hints.serialization()
-                    .registerType(EndpointReadEntity.class)
-                    .registerType(EndpointEntity.class)
-                    .registerType(DeviceReadEntity.class)
-                    .registerType(EndpointNameEntity.class)
+//                    .registerType(EndpointReadEntity.class)
+//                    .registerType(EndpointEntity.class)
+//                    .registerType(DeviceReadEntity.class)
+//                    .registerType(EndpointNameEntity.class)
                     .registerType(Data.class);
 
             // Register proxy
